@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using COMP003B.Assignment3.Models;
-using System;
+
 
 namespace COMP003B.Assignment3.Controllers
 {
@@ -9,6 +9,7 @@ namespace COMP003B.Assignment3.Controllers
         private static List<Book> _books = new List<Book>();
 
         //Get: Books
+        [HttpGet]
         public IActionResult Index()
         {
             return View(_books);
@@ -107,6 +108,6 @@ namespace COMP003B.Assignment3.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-
+      
     }
 }
