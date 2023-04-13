@@ -30,7 +30,7 @@ namespace COMP003B.Assignment3
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Books}/{action=Index}/{id?}");
+                pattern: "{controller=Books}/{action=Index}/{isbn?}");
 
             app.Run();
         }
